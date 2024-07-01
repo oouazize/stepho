@@ -71,7 +71,7 @@ function PasswordResetRequestContainer() {
               <Button
                 loading={resetPasswordMutation.isMutating}
                 type="submit"
-                block
+               
               >
                 <Trans i18nKey={'auth:passwordResetLabel'} />
               </Button>

@@ -84,6 +84,7 @@ function page() {
   const [isAddParticipantModalOpen, setIsAddParticipantModalOpen] =
     useState(false);
   const [newParticipant, setNewParticipant] = useState({
+    id: 3121,
     name: '',
     surname: '',
     dateOfBirth: '',
@@ -110,6 +111,7 @@ function page() {
     setParticipants((prev) => [...prev, newParticipant]);
     setIsAddParticipantModalOpen(false);
     setNewParticipant({
+      id: 423423,
       name: '',
       surname: '',
       dateOfBirth: '',
@@ -277,10 +279,10 @@ function page() {
                     <Label htmlFor="documentType">Document Type</Label>
                     <Select
                       value={newParticipant.documentType}
-                      onChange={(value: string) =>
+                      onValueChange={(e: any) =>
                         setNewParticipant({
                           ...newParticipant,
-                          documentType: value,
+                          documentType: e?.target?.value,
                         })
                       }
                     >

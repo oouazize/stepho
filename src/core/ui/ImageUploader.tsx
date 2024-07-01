@@ -75,7 +75,7 @@ function ImageUploader(
       </label>
 
       <div>
-        <Button onClick={onClear} size={'small'} variant={'ghost'}>
+        <Button onClick={onClear} variant={'ghost'}>
           Remove Image
         </Button>
       </div>

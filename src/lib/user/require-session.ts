@@ -21,14 +21,6 @@ const requireSession = cache(
       return redirectToSignIn(error);
     }
 
-    const requiresMfa = await verifyRequiresMfa(client);
-
-    // If the user requires multi-factor authentication,
-    // redirect them to the page where they can verify their identity.
-    if (requiresMfa) {
-      redirect(configuration.paths.signInMfa);
-    }
-
     if (verifyFromServer) {
       const { data: user, error } = await client.auth.getUser();
 

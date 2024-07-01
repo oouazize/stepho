@@ -12,7 +12,7 @@ import React, {
 
 import { CloudArrowUpIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
-import Label from '~/core/ui/Label';
+import { Label } from '~/core/ui/Label';
 import If from '~/core/ui/If';
 import IconButton from '~/core/ui/IconButton';
 import classNames from 'clsx';
@@ -172,7 +172,7 @@ const ImageUploadInput = forwardRef<React.ElementRef<'input'>, Props>(
 
           <If condition={!state.image}>
             <div className={'flex flex-auto'}>
-              <Label as={'span'} className={'cursor-pointer text-xs'}>
+              <Label className={'cursor-pointer text-xs'}>
                 {children}
               </Label>
             </div>
@@ -184,14 +184,13 @@ const ImageUploadInput = forwardRef<React.ElementRef<'input'>, Props>(
                 condition={state.fileName}
                 fallback={
                   <Label
-                    as={'span'}
                     className={'cursor-pointer truncate text-xs'}
                   >
                     {children}
                   </Label>
                 }
               >
-                <Label as="span" className={'truncate text-xs'}>
+                <Label className={'truncate text-xs'}>
                   {state.fileName}
                 </Label>
               </If>

@@ -31,7 +31,7 @@ const MobileNavigationDropdown: React.FC<{
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant={'secondary'} block>
+        <Button variant={'secondary'}>
           <span
             className={'flex w-full items-center justify-between space-x-2'}
           >

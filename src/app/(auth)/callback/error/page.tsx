@@ -15,7 +15,7 @@ function AuthCallbackErrorPage({ searchParams }: Params) {
 
   // if there is no error, redirect the user to the sign-in page
   if (!error) {
-    redirect('/(auth)/login');
+    redirect('/login');
   }
 
   return (
@@ -32,7 +32,7 @@ function AuthCallbackErrorPage({ searchParams }: Params) {
 
       <div className={'flex flex-col space-y-2'}>
         <Button variant={'ghost'}>
-          <a href={'/(auth)/login'}>
+          <a href={'/login'}>
             <Trans i18nKey={'auth:signIn'} />
           </a>
         </Button>

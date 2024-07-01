@@ -12,7 +12,7 @@ const InfoPopover = ({
   return (
     <Popover.Root>
       <Popover.Trigger asChild>
-        <Button variant={'transparent'}>{triggerLabel}</Button>
+        <Button>{triggerLabel}</Button>
       </Popover.Trigger>
       <Popover.Portal>
         <Popover.Content

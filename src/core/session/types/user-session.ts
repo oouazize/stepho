@@ -1,5 +1,4 @@
 import type UserData from '~/core/session/types/user-data';
-import type MembershipRole from '~/lib/organizations/types/membership-role';
 
 /**
  * This interface combines the user's metadata from
@@ -17,7 +16,7 @@ interface UserSession {
   };
 
   data: Maybe<UserData>;
-  role: Maybe<MembershipRole>;
+  role: any;
 }
 
 export default UserSession;

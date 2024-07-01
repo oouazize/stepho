@@ -9,11 +9,7 @@ import AuthChangeListener from '~/components/AuthChangeListener';
 
 function SiteHeaderSessionProvider(
   props: React.PropsWithChildren<{
-    data: Maybe<{
-      auth: UserSession['auth'];
-      data: UserSession['data'];
-      role: UserSession['role'];
-    }>;
+    data: any;
   }>,
 ) {
   const [userSession, setUserSession] = useState(props.data);

@@ -44,7 +44,7 @@ const PhoneNumberCredentialForm: React.FC<{
           />
         </TextField.Label>
 
-        <Button loading={loading} block type={'submit'}>
+        <Button loading={loading} type={'submit'}>
           <If condition={action === 'link'}>
             <Trans i18nKey={'profile:verifyPhoneNumberSubmitLabel'} />
           </If>
